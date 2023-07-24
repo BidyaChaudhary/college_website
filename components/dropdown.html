@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown{
+            display: inline-block;
+            position: relative;
+        }
+        .list-items{
+            display: flex;
+            flex-direction: column;
+            display: none;
+            position: absolute;
+        }
+       .dropdown:hover .list-items{
+        display: block;
+       }
+    </style>
+</head>
+<body>
+  <div class="dropdown">
+    <button>DropArea</button>
+    <div class="list-items">
+        <span class="list-item1">list-item1</span>
+        <span class="list-item2">list-item2</span>
+        <span class="list-item3">list-item3</span>
+        <span class="list-item4">list-item4</span>
+    </div>
+  </div>
+</body>
+</html>
